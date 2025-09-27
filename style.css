@@ -1,0 +1,72 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  text-align: center;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+h1 {
+  color: #d60000;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #888;
+}
+
+button:nth-child(1) {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button:nth-child(2) {
+  background-color: #4d79ff;
+  color: white;
+}
+
+button:nth-child(3) {
+  background-color: #ffa64d;
+  color: white;
+}
+
+.instructions {
+  margin-top: 30px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#helpText {
+  font-size: 19px;
+  color: #333;
+}

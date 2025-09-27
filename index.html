@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الطوارئ الذكي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚨 الطوارئ الذكي 🚨</h1>
+    <p>اختار نوع الطوارئ:</p>
+
+    <div class="buttons">
+      <button onclick="showHelp('ambulance')">🚑 إسعاف</button>
+      <button onclick="showHelp('police')">🚔 شرطة</button>
+      <button onclick="showHelp('fire')">🚒 مطافي</button>
+    </div>
+
+    <div id="instructions" class="instructions">
+      <h2>الإرشادات:</h2>
+      <p id="helpText">من فضلك اختار نوع الطوارئ ⬆️</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
