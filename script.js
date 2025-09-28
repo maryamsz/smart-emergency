@@ -4,7 +4,7 @@ function showHelp(type) {
   let phoneNum = "";
 
   if (type === "ambulance") {
-    location.href = "./smart-emergency/aid.html";
+    location.href = "./aid.html";
   } else if (type === "police") {
     text = `
     👮‍♂️ تعليمات الشرطة:
@@ -37,5 +37,6 @@ function showHelp(type) {
     window.open("sms:" + phoneNum + "?body=" + encodeURIComponent(smsMsg));
   }, 1000);
 }
+
 
 
