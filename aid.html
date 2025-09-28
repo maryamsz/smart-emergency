@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الإسعافات الأولية - الطوارئ الذكي</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      text-align: center;
+      padding: 30px;
+      direction: rtl;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .box {
+      display: none;
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid #007bff;
+      border-radius: 15px;
+      width: 70%;
+      background: #f9f9f9;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🚑 الإسعافات الأولية</h1>
+  <p>اختار الحالة عشان تعرف تتعامل معاها</p>
+
+  <button onclick="showHelp('burn1')">🔥 حروق الدرجة الأولى</button>
+  <button onclick="showHelp('burn2')">🔥 حروق الدرجة الثانية</button>
+  <button onclick="showHelp('cpr')">❤️ الإنعاش القلبي (CPR)</button>
+  <button onclick="showHelp('cut')">🩸 جروح وقطع</button>
+
+  <div id="burn1" class="box">
+    <h2>🔥 حروق الدرجة الأولى</h2>
+    <ul>
+      <li>اغسل مكان الحرق بمياه جارية باردة لمدة 10 دقائق.</li>
+      <li>ما تستخدمش تلج مباشر على الجلد.</li>
+      <li>غطي الحرق بشاش أو ضمادة نظيفة.</li>
+    </ul>
+  </div>
+
+  <div id="burn2" class="box">
+    <h2>🔥 حروق الدرجة الثانية</h2>
+    <ul>
+      <li>اغسل المنطقة المصابة بمياه جارية باردة لمدة 15 دقيقة.</li>
+      <li>ما تفرقعش الفقاعات أو البثور.</li>
+      <li>غطي المكان بشاش معقم – وتوجه لأقرب مستشفى.</li>
+    </ul>
+  </div>
+
+  <div id="cpr" class="box">
+    <h2>❤️ الإنعاش القلبي الرئوي (CPR)</h2>
+    <ul>
+      <li>تأكد إن الشخص مش بيتنفس.</li>
+      <li>ابدأ ضغطات صدرية: 30 ضغطة.</li>
+      <li>اعمل نفسين إنقاذ.</li>
+      <li>كرر (30:2) لحد وصول الإسعاف.</li>
+    </ul>
+  </div>
+
+  <div id="cut" class="box">
+    <h2>🩸 جروح وقطع</h2>
+    <ul>
+      <li>اغسل الجرح بمياه وصابون.</li>
+      <li>اضغط على الجرح بقطعة شاش لوقف النزيف.</li>
+      <li>غطي الجرح بضمادة نظيفة.</li>
+      <li>لو النزيف شديد → توجه للطوارئ فورًا.</li>
+    </ul>
+  </div>
+
+  <script>
+    function showHelp(id) {
+      // اخفاء كل البوكسات
+      var boxes = document.querySelectorAll('.box');
+      boxes.forEach(function(box) {
+        box.style.display = 'none';
+      });
+      // اظهار البوكس المطلوب
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
